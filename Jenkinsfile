@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Source') {
       steps {
-        git 'https://github.com/ohk3726/trainer.git'
+        git(url: 'https://github.com/ohk3726/trainer.git', branch: '*/marster')
       }
     }
 
