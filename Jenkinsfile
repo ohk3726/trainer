@@ -7,13 +7,5 @@ pipeline {
       }
     }
 
-    stage('Pre Docker Delete') {
-      steps {
-        sh '''pwd
-
-docker ps'''
-      }
-    }
-
   }
 }
