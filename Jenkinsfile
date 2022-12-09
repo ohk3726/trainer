@@ -9,7 +9,7 @@ pipeline {
 
     stage('Pre Docker Delete') {
       steps {
-        sh 'Docker ps'
+        sh 'sudo Docker ps'
       }
     }
 
