@@ -3,7 +3,13 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh './gradlew build'
+        sh 'ls -al'
+      }
+    }
+
+    stage('Pre Docker Delete') {
+      steps {
+        sh 'Docker ps'
       }
     }
 
